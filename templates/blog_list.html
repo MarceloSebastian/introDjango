@@ -1,1 +1,11 @@
-{% comment %} Hello, visit my blog at <a href="{% url '' %}">Here</a> {% endcomment %}
+blog list
+
+<br>
+{% for post in posts %}
+{{ post.title }}
+{% endfor %}
+<br>
+
+<a href="{% url 'blog:create' %}" >Create</a>
+
+
